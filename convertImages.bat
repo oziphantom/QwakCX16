@@ -1,0 +1,7 @@
+python c64charbitmapToCX16_4bppTiles.py back_shadow
+python c64charbitmapToCX16_4bppTiles.py fixed_section_chars
+python c64charbitmapToCX16_4bppTiles.py top_fixed_chars
+python c64charbitmapToCX16_4bppTiles.py font4bpp
+python c64SpriteToCX16_4bpp32x32Sprites.py sprites
+
+

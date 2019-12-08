@@ -1,0 +1,17 @@
+*.vice
+*.label
+*.prg
+*.prg_test
+*.png
+/target/*
+*.crt
+*.gif
+*.acme
+*.dpm
+*.tass
+*.test
+old_tiledefs.raw
+old_testattribs.raw
+old_testmap.raw
+full_tiledefs.raw
+old_testchars.raw
