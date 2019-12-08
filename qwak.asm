@@ -5373,7 +5373,7 @@ SpriteStruct .block
 
 Version = (kStrings.version,12,4)
 Original = (kStrings.original,3,6)
-Ported = (kStrings.c64port,6,8)
+Ported = (kStrings.cx16port,5,8)
 Code = (kStrings.program,11,10)
 Art = (kStrings.art,11,11)
 Music = (kStrings.music,11,12)
@@ -5416,7 +5416,7 @@ menuOffsetsEnd		.byte (37,30,22,14)*2
 kStrings .block 
 gameOver = 0
 original = 1
-c64port = 2
+cx16port = 2
 program = 3
 art = 4
 music = 5
@@ -5432,14 +5432,14 @@ password = 14
 passwordBlank = 15
 .bend
 
-StringTableLUTLo .byte <GAMEOVER,<ORIGINAL,<C64PORT,<PROGRAM,<ART,<MUSIC,<SPECIALTHANKS,<SOCI,<MARTINPIPER,<SAUL,<SFX,<NONE,<BOTH,<VERSION,<PASSWORD,<PASSWORDBLANK
-StringTableLUTHi .byte >GAMEOVER,>ORIGINAL,>C64PORT,>PROGRAM,>ART,>MUSIC,>SPECIALTHANKS,>SOCI,>MARTINPIPER,>SAUL,>SFX,>NONE,>BOTH,>VERSION,>PASSWORD,>PASSWORDBLANK
+StringTableLUTLo .byte <GAMEOVER,<ORIGINAL,<CX16PORT,<PROGRAM,<ART,<MUSIC,<SPECIALTHANKS,<SOCI,<MARTINPIPER,<SAUL,<SFX,<NONE,<BOTH,<VERSION,<PASSWORD,<PASSWORDBLANK
+StringTableLUTHi .byte >GAMEOVER,>ORIGINAL,>CX16PORT,>PROGRAM,>ART,>MUSIC,>SPECIALTHANKS,>SOCI,>MARTINPIPER,>SAUL,>SFX,>NONE,>BOTH,>VERSION,>PASSWORD,>PASSWORDBLANK
 
 GAMEOVER 		.text "GAME OVER"
 		 			.byte $FF
 ORIGINAL 		.text "ORIGINAL CONCEPT : JAMIE WOODHOUSE"		
 					.byte $FF
-C64PORT  		.text "PORTED TO THE COMMODORE 64 BY"		
+CX16PORT  		.text "PORTED TO THE COMMANDER X16 BY"		
 					.byte $FF		
 PROGRAM	 		.text "CODE  : OZIPHANTOM"		
 					.byte $FF		
@@ -5461,7 +5461,7 @@ SOCI		  		.text "SOCI, MARTIN PIPER"
 					.byte $FF		
 MARTINPIPER	  	.text "DIDI, THERYK"		
 					.byte $FF			
-VERSION			.text "RESET EDITION 1.3",$FF		
+VERSION			.text "CX 16 EDITION 1.3",$FF		
 PASSWORD			.text "TYPE PASSWORD : SPACE TO CLEAR",$FF	
 PASSWORDBLANK	.text "------------",$FF	
 					
