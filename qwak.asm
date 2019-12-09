@@ -324,19 +324,19 @@ EntityDataPointer	.word ?
 CurrentEntity		.byte ?
 CollidedEntity		.byte ?
 EntNum				.byte ?
-CollisionResult		.byte ?
-Pointer1			.dunion HLWord
-Pointer2			.dunion HLWord
-Pointer3			.dunion HLWord
-Pointer4			.dunion HLWord
+CollisionResult	.byte ?
+Pointer1				.dunion HLWord
+Pointer2				.dunion HLWord
+Pointer3				.dunion HLWord
+Pointer4				.dunion HLWord
 playerTempCol		.byte ?
 ZPTemp				.byte ?
 ZPTemp2				.byte ?
 ZPTemp3				.byte ?
 ZPTemp4				.byte ?
 ZPTemp5				.byte ?
-TempX				.byte ?
-ActiveTileIndex		.byte ?
+TempX					.byte ?
+ActiveTileIndex	.byte ?
 ActiveTile			.byte ?
 TestingSprX1		.byte ?
 TestingSprX2		.byte ?
@@ -344,8 +344,8 @@ TestingSprY1		.byte ?
 TestingSprY2		.byte ?
 GameStatePointer	.word ?
 
-CollideSpriteToCheck .byte ?
-CollideSpriteBoxIndex .byte ?
+CollideSpriteToCheck 	.byte ?
+CollideSpriteBoxIndex 	.byte ?
 CollideCharTLI .byte ?
 CollideCharTLC .byte ?
 CollideCharTRI .byte ?
@@ -354,16 +354,16 @@ CollideCharBLI .byte ?
 CollideCharBLC .byte ?
 CollideCharBRI .byte ?
 CollideCharBRC .byte ?
-CollideInternalSprTLX .byte ?  ; these 4 MUST be in the same order as below
-CollideInternalSprBRX .byte ?
-CollideInternalSprTLY .byte ?
-CollideInternalSprBRY .byte ?
-CollideInternalTTLX .byte ?
-CollideInternalTBRX .byte ?
-CollideInternalTTLY .byte ?
-CollideInternalTBRY .byte ?
-DidClipX			.byte ?  ; this is if the add X with MSB function did clip the Y
-HideScreen			.byte ?
+CollideInternalSprTLX 	.byte ?  ; these 4 MUST be in the same order as below
+CollideInternalSprBRX 	.byte ?
+CollideInternalSprTLY 	.byte ?
+CollideInternalSprBRY 	.byte ?
+CollideInternalTTLX 		.byte ?
+CollideInternalTBRX 		.byte ?
+CollideInternalTTLY 		.byte ?
+CollideInternalTBRY 		.byte ?
+DidClipX						.byte ?  ; this is if the add X with MSB function did clip the Y
+HideScreen					.byte ?
 ZP_END 
 .send ZP
 .cerror * > $7F, "Too many ZP variables"
@@ -474,7 +474,7 @@ CODE_START
 	
 .enc "qwak"	
 	
-*= $0810
+*= $080D
 .dsection STARTUP
 .section STARTUP
 start
